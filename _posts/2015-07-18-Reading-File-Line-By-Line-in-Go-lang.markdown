@@ -4,6 +4,7 @@ title:  "Reading file, line by line in Go lang"
 date:   2015-07-18 11:57:49
 categories: blog golang
 tags: golang go
+comments: true
 ---
 Reading from file line by line is quite simple in golang, and can be done in few lines of code, let see how its done.
 

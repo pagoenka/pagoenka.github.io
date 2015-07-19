@@ -4,6 +4,7 @@ title:  "Arrow lines in Openlayers 3"
 date:   2015-07-13 11:57:49
 categories: blog javascript
 tags: javascript
+comments: true
 ---
 Recently working on map using <a title="Openalayers 3" href="http://openlayers.org/">Openlayers 3</a> I found there is no direct way to draw the Arrow lines using the <a title="Openalayers 3" href="http://openlayers.org/">Openlayers 3</a> , so what I did, used LineString and Icon to draw an Arrow.
 

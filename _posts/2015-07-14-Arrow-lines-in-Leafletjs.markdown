@@ -4,6 +4,7 @@ title:  "Arrow lines in Leaflet.js"
 date:   2015-07-14 11:57:49
 categories: blog javascript
 tags: javascript
+comments: true
 ---
 Similar to my previous blog [Arrow Lines in Openlayers3]({% post_url 2015-07-13-Arrow-lines-in-Openlayers3 %}), I implemented the Arrow lines in <a href="http://leafletjs.com/">Leaflet.js</a>, another famous map library.
 
