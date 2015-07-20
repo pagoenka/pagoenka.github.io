@@ -186,6 +186,11 @@
     }
 }
 
+.all-post-list {
+    margin-left: 0;
+    list-style: none;
+}
+
 .project-list {
     margin-left: 0;
     list-style: none;
@@ -265,4 +270,17 @@
 .pagination{
     clear: both;
     padding-bottom: 15px;
+}
+
+.profilePic {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  background: url(../images/mine.PNG) no-repeat;
+  background-position-x: -50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
