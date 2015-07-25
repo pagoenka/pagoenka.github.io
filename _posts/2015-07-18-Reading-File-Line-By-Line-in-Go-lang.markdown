@@ -33,3 +33,5 @@ We can use fileScanner.Scan() in for loop to determine end of file.
 The complete code is as below, here I am reading line by line from file and printing it on console
 
 {% gist 80fd2faa2ee2ac5b646d %}
+
+<strong> Note:- </strong> I am using "_" for error, and not handling the error, but should be done in your production code, read about error handling [here](http://blog.golang.org/error-handling-and-go)
