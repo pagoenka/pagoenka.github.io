@@ -17,12 +17,22 @@ Select the element (using chrome developers tool) for which you want scope and t
 {% highlight javascript %}angular.element($0).scope(){% endhighlight %}
 
 Here "$0" is the selected element.
-OR 
-{% highlight javascript %} angular.element("#Element_Id").scope(){% endhighlight %}
+
+Or if you are using jQuery, you can use the normal element selector
+
+{% highlight javascript %}
+ angular.element("#Element_Id").scope()
+{% endhighlight %}
 
 e.g In angular phonecat app -
 
 <img src="{{site.baseurl}}/images/scope.png" alt="Access Scope In Console" width="616" height="378" />
+
+If you are not using jQuery then you will get error *"Looking up elements via selectors is not supported by jqLite"* then you can use normal javascript way like this instead
+
+{% highlight javascript %}
+ angular.element(document.getElementById('element_id')).scope()
+{% endhighlight %}
 
 <br>
 <strong> 2. Adding function or variable to scope from developer console -</strong>
