@@ -79,4 +79,63 @@ scope.$apply(scopeChanges);
 }
 {% endhighlight %}
 
+<strong>4. Getting all the controllers,directives,services,filters etc. for your App in console -</strong>
+
+Sometimes you may want to check what all services/controllers/filters are registered in App.
+(In case where controllers/services are dynamically loaded). To do that first get referencce to module where you have registered these things.
+
+e.g If you have app named *myApp* and you have registered controller on it as
+
+{% highlight javascript%}
+	var app = angular.module('myApp',[]);
+	// Adding controller
+	app.controller('MyController', [function(){ ... }])
+	app.controller('OtherController', [function(){ ... }])
+
+	//Adding service/factory
+	app.factory('myFactory', [function(){...}]);
+	app.service('myService', [function(){...}]);
+
+	//Adding filter
+	app.filter('myFilter', [function(){...}]);
+
+	//Adding directive
+	app.directive('myDirective', [function()]){...}
+
+	//Adding value
+	app.constant('myValue','value');
+{% endhighlight%}
+
+Then you can check if indeed these are registered properly in console by accessing _invokeQueue
+
+{% highlight javascript%}
+	var appRef = angular.module('myApp'); // Get reference to module
+	// Note called module without passing []
+	var arr = appRef._invokeQueue
+{% endhighlight%}
+
+This _invokeQueue give you an array of object (array) of all registered services, controllers etc. Now you can iterate over this array get the name as - 
+
+{% highlight javascript%}
+// In continuation with above
+console.log(arr[0][2][0]) // MyController
+console.log(arr[1][2][0]) // OtherController
+console.log(arr[2][2][0]) // myFactory
+console.log(arr[3][2][0]) // myService
+console.log(arr[4][2][0]) // myFilter
+console.log(arr[5][2][0]) // myDirective
+console.log(arr[6][2][0]) // myValue
+
+//Get by which provider was used to register controller, service etc.
+console.log(arr[0][0]) // $controllerProvider
+console.log(arr[1][0]) // $controllerProvider
+console.log(arr[2][0]) // $provide
+console.log(arr[3][0]) // $provide
+console.log(arr[4][0]) // $filterProvider
+console.log(arr[5][0]) // $compileProvider
+console.log(arr[6][0]) // $provide
+{% endhighlight %}
+
+
+
 P.S - Will keep updating this post as I come across some more tricks/tips
