@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "D3.js scales"
+title:  "Understanding D3.js scales"
 date:   2015-07-30 11:57:49
 categories: blog javascript
-tags: javascript d3.js d3
+tags: javascript d3.js d3 charts
 comments: true
 ---
 
-In this post we will take look at scales in d3.js. How they work, how to use them, what are the type of scales and there corresponding usage.
+In this post we will take look at basics of scales in d3.js. and understanding their underlying work and concept.
 
 So what does scale do? Scale as it name says it scales, 
 
