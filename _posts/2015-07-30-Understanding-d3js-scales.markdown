@@ -26,7 +26,7 @@ Here we have plotted 6 points(0,2,4,6,8,10) on the line of 360px in length,so th
 This points to pixel mapping was easy, this would not be the case always.
 Say for example you want to plot (505, 999, 1311, 1750, 1893 ) on line of length 385px, now you are understanding the complexity, and this kind of data you would plot in real application, now how to decide how many pixels should be used to plot above domain, so here d3.scale comes handy.
 
-The mapping of one set of numbers to other is known as Interpolation. D3 scales uses interplation of mapping data points to pixels, we will talk more about interpolation in another article. Beside this scale also offer few more things that you would need for plotting points, axes etc.
+The mapping of one set of numbers to other is known as Interpolation. D3 scales uses interplation of mapping data points to pixels, to understand more about interpolation go to this [article]({% post_url 2015-07-31-Understanding-d3js-interpolation %}). Beside this scale also offer few more things that you would need for plotting points, axes etc.
 
 There are three types of scales - 
 
