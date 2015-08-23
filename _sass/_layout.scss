@@ -284,3 +284,25 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:2px solid grey;
+}
+
+th{
+    border:2px solid grey;
+    color: #5F5D5D;
+    padding : 2px;
+}
+
+td{
+    border:1px solid grey;
+    padding : 2px;
+    text-align: center;
+}
+
+.highlightEmpty {
+    background-color: #CAE88C;
+}
