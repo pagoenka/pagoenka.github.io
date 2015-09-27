@@ -3,7 +3,7 @@ layout: post
 title:  "Understanding Data Joins in D3.js - Part 1"
 date:   2015-08-20 11:00:00
 categories: blog javascript
-tags: javascript d3.js charts datajoins
+tags: javascript d3.js d3 charts datajoins databinding
 comments: true
 ---
 
@@ -175,7 +175,7 @@ This call to data does few things -
 
  - like we saw above, it joins the data with elements based on index
 
- - it returns the *selection of element* for which data has been joined, so in [Case 1]({{page.url}}#case1) we will get selection of 3 divs, in [Case 2]({{page.url}}#case2) we get selection of 3 divs & not 4, in [Case 3]({{page.url}}#case3) we get selection of 2 divs & not 3. These selections are called **Update** selection, and we captured it in variable *updateDivSelection*
+ - it returns the *selection of element (divs)* for which data has been joined, so in [Case 1]({{page.url}}#case1) we will get selection of 3 divs, in [Case 2]({{page.url}}#case2) we get selection of 3 divs & not 4, in [Case 3]({{page.url}}#case3) we get selection of 2 divs & not 3. These selections are called **Update** selection, and we captured it in variable *updateDivSelection*
 
  - if there are more number of elements in array passed compared to divs as in [Case 2]({{page.url}}#case2), it creates the placeholder div elements for these extra data elements, and you can access those using **enter()** call. This can be used to add new divs for the data element for which no div was available.
 
@@ -264,4 +264,4 @@ updateDivSelection.exit().remove();
 
 <iframe width="100%" height="300" src="//jsfiddle.net/codefoolz/5zfd88ay/embedded/result,js,html,css/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-So this explains how data, enter and exit works, we will see some further details about key function and how to use object as data in part 2 of this article, hope this cleared basics of Data joins in d3.js.
+So this explains how data, enter and exit works, we will see some further details about key function and how to use object as data in [part 2]({% post_url 2015-08-20-Understanding-data-joins-d3js-part2 %}) of this article, hope this cleared basics of Data joins in d3.js.
