@@ -124,7 +124,7 @@ Lets see this in action -
 
 {% endhighlight %}
 
-and still this would have worked but as a practice always keep the reference of returning value of data() and enter() like we did above using **'updateDivSelection'** and **'enterDivSelection**, we will see its advantage shortly.
+and still this would have worked but as a practice always keep the reference of returning value of data() and enter() like we did above using **'updateDivSelection'** and **'enterDivSelection**.
 
 Lets say we are using some real time data and our **dataArray** keeps updating after 1 sec and you want these changes should be reflected on the Dom, by update we mean either of these can happen - 
 
@@ -318,7 +318,7 @@ Working example -
 <iframe width="100%" height="300" src="//jsfiddle.net/codefoolz/hb9gna15/embedded/result,js,html,css/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 This gives us idea how we should write our code using d3.js, always use update selection
-after **enter()** for properties which can change. And that's why I said earlier, its good to keep references of data() and enter() return values.
+after **enter()** for properties which can change.
 
 Now we will see last part of the data join series i.e **key functions**, now suppose say I remove **first** object of dataArray by using **shift()** function and will call render again, what ideally should happen is div with text 'one' should disappear, right? lets try that - 
 
