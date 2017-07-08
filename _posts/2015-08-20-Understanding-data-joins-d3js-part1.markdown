@@ -264,4 +264,4 @@ updateDivSelection.exit().remove();
 
 <iframe width="100%" height="300" src="//jsfiddle.net/codefoolz/5zfd88ay/embedded/result,js,html,css/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-So this explains how data, enter and exit works, we will see some further details about key function and how to use object as data in [part 2]({% post_url 2015-08-20-Understanding-data-joins-d3js-part2 %}) of this article, hope this cleared basics of Data joins in d3.js.
+So this explains how data, enter and exit works, we will see some further details about key function and how to use object as data in [part 2]({% post_url 2015-09-23-Understanding-data-joins-d3js-part2 %}) of this article, hope this cleared basics of Data joins in d3.js.
