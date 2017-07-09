@@ -33,4 +33,5 @@ permalink: /about/
                 </svg>
               </span>
               <span class="username">{{ site.github_username }}</span>
+         </a>
 </p>

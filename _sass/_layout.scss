@@ -273,13 +273,14 @@
 }
 
 .profilePic {
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  background: url(../images/mine.PNG) no-repeat;
-  background-position-x: -50px;
+  width: 250px;
+  height: 250px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  background: url(../images/mine.jpeg) no-repeat;
+  background-position-x: -250px;
+  background-position-y: -50px;
   display: block;
   margin-left: auto;
   margin-right: auto;
