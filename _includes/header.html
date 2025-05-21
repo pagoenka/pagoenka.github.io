@@ -1,10 +1,17 @@
-<header class="site-header">
-
+<!-- <header class="site-header">
+  <div class="header-container">
   <div class="title-div">
     <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
   </div>
-</header>
-<nav class="site-nav">
+  <div>
+        {% for page in site.pages %}
+          {% if page.title %}
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          {% endif %}
+        {% endfor %}
+  </div>
+</header> -->
+<!-- <nav class="site-nav">
       <div class="trigger">
         {% for page in site.pages %}
           {% if page.title %}
@@ -12,4 +19,19 @@
           {% endif %}
         {% endfor %}
       </div>
+  </nav> -->
+
+  <header class="site-header">
+  <div class="header-container">
+    <div class="title-div">
+      <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    </div>
+    <nav class="site-nav">
+      {% for page in site.pages %}
+        {% if page.title %}
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        {% endif %}
+      {% endfor %}
     </nav>
+  </div>
+</header>

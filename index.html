@@ -2,29 +2,34 @@
 layout: home
 ---
 
-<div  class="home post-list-wrapper">
+<div class="hero">
+  <div class="hero-content">
+    <h1>Tech Notes from the Journey</h1>
+    <p>Sharing bits of what I’m learning in tech - sometimes new, sometimes messy, always real</p>
+    <a href="{{ site.baseurl }}/all-post" class="btn-primary">Explore Articles</a>
+  </div>
+</div>
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
+<div id="posts" class="home post-list-wrapper">
+  <h1 class="section-heading">Recent Posts</h1>
+  <div class="post-grid">
     {% for post in paginator.posts %}
-      <li>
+      <div class="post-card">
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <div class="content">
-          {{ post.excerpt }}
-        </div>
-      </li>
+        <p class="post-excerpt">{{ post.excerpt }}</p>
+      </div>
     {% endfor %}
-  </ul>
-
+  </div>
+  <a href="{{ site.baseurl }}/all-post" class="btn-secondary">View All Posts</a>
 </div>
 
 <div class="project-list-wrapper">
-  <h1 class="page-heading">Projects</h1>
+  
   <ul class="project-list">
+    <h1 class="section-heading">Projects</h1>
     <li>
       <h3><a href="{{site.baseurl}}/patternlock/">jQuery Pattern Lock plugin</a></h3>
       <img class="project-image" src="{{site.baseurl}}/images/patternLock_logo.PNG" alt="GitHub Logo">
